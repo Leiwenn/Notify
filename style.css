@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('polices/pacifico-webfont.woff2') format('woff2'),
+         url('polices/pacifico-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vollkornsemibold';    /*a la place de 'ralewayregular'*/
+    src: url('vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('vollkorn-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.liseret
+{
+  background-color: #28a745;
+  height: 10px;
+}
+
+/*------------HEADER----------------------*/
+header
+{
+  background: url(img/header.jpg) no-repeat;
+  background-size: cover;
+  height: auto;
+}
+h1
+{
+  font-family: 'pacificoregular';
+}
+.rond
+{
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #28a745;
+}
+.list-group li
+{
+  background-color: black;
+  opacity: 0.5;
+}
+.list-group li:hover
+{
+  background-color: #28a745;
+  opacity: 1;
+}
+
+/*------------------------SECTION 1-------------*/
+.premiere h2
+{
+  font-family: 'pacificoregular';
+  font-weight: bold;
+}
+.premiere p, .deuxieme p, .troisieme p, .quatrieme p
+{
+  font: 'Helvetica Neue'; /*police par defaut donc pas de déclaration @font-face + taille non déclarée car c'est la taille par défaut de bootstrap pour les <p>*/
+}
+
+/*--------------------------SECTION 2------------*/
+.deuxieme
+{
+  background-color: #e3e3e3;
+}
+.deuxieme h2
+{
+  font-family: 'vollkornsemibold';
+  font-weight: bold;
+}
+.btn     /*formulaire*/
+{
+  font-family: 'vollkornsemibold';
+  font-weight: bold;
+}
+.embed-responsive
+{
+  box-shadow: 8px 8px #28a745;  /*ajouté ombre verte*/
+}
+
+/*--------------------------SECTION 3------------*/
+.troisieme h3
+{
+  font-family: 'pacificoregular';
+  font-weight: bold;
+}
+/*-----------------------------carrousel------*/
+.carousel-item img:hover
+{
+  background-color: #28a745;
+  opacity: 0.5;
+}
+
+/*---------------------------------SECTION-4------*/
+.quatrieme h2
+{
+  font-family: 'vollkornsemibold';
+  font-weight: bold;
+}
+.reseaux_sociaux img
+{
+  vertical-align: middle;
+}
+.reseaux_sociaux a
+{
+  background-color: #d4d4d4;
+}
+.reseaux_sociaux a:hover
+{
+  background-color: #28a745;
+}
+
+/*-----------FOOTER------------*/
+footer
+{
+  background-color: #e3e3e3;
+}
+
+/*---------------------------------------------------MEDIA-QUERIES----*/
+@media (min-width: 576px) {       /* telephone xs */
+
+}
+
+@media (min-width: 768px) {       /* tablette sm */
+  
+}
+
+@media (min-width: 992px)        /* ordinateur écran moyen = md */
+{
+  header
+  {
+    height: 500px; /*resize*/
+  }
+  .logo
+  {
+    margin-top: 120px;
+  }
+  h1
+  {
+    font-size: 60px;
+    line-height: 0.333;
+  }
+  header p
+  {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .premiere
+  {
+    height: 336px;
+  }
+  .premiere h2
+  {
+    font: 22px;
+    line-height: 0.818;
+  }
+  .premiere p, .deuxieme p, .troisieme p, .quatrieme p
+  {
+    line-height: 1.625;
+  }
+  .deuxieme
+  {
+    height: 426px;
+  }
+  .deuxieme h2
+  {
+    font: 22px;
+  }
+  .btn     /*formulaire*/
+  {
+    font: 22px;
+    line-height: 0.818;
+  }
+  .embed-responsive
+  {
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+  }
+  .troisieme
+  {
+    height: 232px;
+  }
+  .troisieme h3
+  {
+    font: 18px;
+    line-height: 0.818;
+  }
+  .quatrieme
+  {
+    height: 232px;
+  }
+  .quatrieme h2
+  {
+    font: 24px;
+    line-height: 1;
+  }
+  footer
+  {
+    height: 130px;
+    border-top: 2px solid #28a745;  /*ajouté liseret*/
+  }
+  footer nav
+  {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px)       /* grand écran = lg */
+{
+ 
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+	<meta name="description" content="NOTIFY est une application intelligente qui s'adapte à vos goûts cinématographiques et vous prévient lorsqu'un film susceptible de vous plaire est à l'affiche." />
+	<meta name="twitter:card" value="summary">
+	<meta property="og:title" content="Notify: programmez vos sorties ciné" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.notify.com/" />
+	<meta property="og:image" content="img/header.jpg" />
+	<meta property="og:description" content="NOTIFY est une application intelligente qui s'adapte à vos goûts cinématographiques et vous prévient lorsqu'un film susceptible de vous plaire est à l'affiche." />
+	<link rel="shortcut icon" href="img/tel.png" >                             <!--ajouté favicon-->
+	<link rel="icon" type="image/gif" href="animated_tel.gif" >
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<title>Notify</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row liseret">
+		</div>
+			<header class="row d-flex flex-column">
+				<div class="offset-md-2 col-md-3 d-inline-flex logo">
+					<h1 class="text-white">Notify</h1>
+					<div class="rond ml-2 mt-4"></div>
+				</div>
+				<div class="offset-md-2 col-md-4">
+					<p class="text-white">Programmez vos sorties ciné !</p>
+					<ul class="list-group list-group-horizontal list-unstyled text-center mt-4">
+						<li class="rounded-circle p-3 mr-3"><a href="#"><img src="img/apple.png" alt="apple" /></a></li>
+						<li class="rounded-circle p-3 mr-3"><a href="#"><img src="img/android.png" alt="android" /></a></li>
+						<li class="rounded-circle p-3"><a href="#"><img src="img/windows.png" alt="windows" /></a></li>
+					</ul>
+				</div>
+			</header>
+			<section class="row premiere bg-white d-flex justify-content-around">
+			<!--marges agrandies,couleur verte de bootstrap utilisée pour une meilleure lisibilité-->
+				<div class="col-md-3 text-center mt-5">            <!--nb: couleur verte harmonisée sur tout le theme-->
+					<img class="border border-success rounded-circle bg-success p-3" src="img/theme.png" alt="roue" />
+					<h2 class="mt-3">Préférences</h2>
+					<p class="text-muted mt-3">Science-fiction, Comédies, Action, Drames, ... et ne soyez notifiée que pour ce qui vous intéresse.</p>
+				</div>
+				<div class="col-md-3 text-center mt-5">
+					<img class="border border-success rounded-circle bg-success p-3" src="img/design.png" alt="etoile" />
+					<h2 class="mt-3">Notez les !</h2>
+					<p class="text-muted mt-3">Donnez une note: une à 5 étoiles vos notifications seront de plus en plus proches de vos goûts !</p>
+				</div>
+				<div class="col-md-3 text-center mt-5">
+					<img class="border border-success rounded-circle bg-success p-3" src="img/audience.png" alt="planete" />
+					<h2 class="mt-3">Forum</h2>
+					<p class="text-muted mt-3">Faites vos critiques de films et partagez les avec la communauté sur le site ou via votre application.</p>
+				</div>
+			</section>
+			<section class="row deuxieme">
+				<div class="offset-md-1 col-md-4 mt-5">
+					<h2>Soyez informé de toute l'actualité ciné !</h2>
+					<p class="text-muted mt-3">Rentrez votre adresse Email !</br>En vous inscrivant à notre newsletter nous vous tiendrons informés des futures sorties des films et de ceux en préparation. Ne ratez plus rien !</p>
+					<!-- form avec button bootstrap4 -->
+					<form class="input-group input-group-lg mw-100" action="/action_page.php">
+						<input type="email" class="form-control" placeholder="Adresse Email" name="user_email" id="email">
+						<label for="email"></label>
+						<div class="input-group-prepend">
+							<button class="btn btn-success rounded-right" type="button">Newsletter</button>
+						</div>
+					</form>
+				</div>
+				<div class="offset-md-2 col-md-4 mt-5"> <!-- ajouté une vidéo libre de droits -->
+					<video autoplay controls class="embed-responsive embed-responsive-16by9 rounded">
+						<source class="embed-responsive-item" src="video/cell-phone.webm"></source>
+						<source class="embed-responsive-item" src="video/cell-phone.mp4"></source>
+					</video>
+				</div>
+			</section>
+			<section class="row troisieme bg-white">
+				<div class="offset-md-3 col-md-6 offset-md-3 text-center text-justify mt-4">
+					<p class="text-muted">Super application ! je ne loupe plus aucun film et je sais tout sur ceux qui vont sortir. La communauté NOTIFY c'est plusieurs milliers de membres avec qui partager.</p>
+					<h3>Jane Hunt</h3>
+				</div>
+				<div class="mx-auto mt-3">        <!--d-none = carousel display:none pour les ecrans xs-->
+					<div class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="2500" data-wrap="true">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="#"><img src="img/img.png" alt="1 slide" /></a>
+							<a href="#"><img src="img/img1.png" alt="2 slide" /></a>
+							<a href="#"><img src="img/img2.png" alt="3 slide" /></a>
+							<a href="#"><img src="img/img3.png" alt="4 slide" /></a>
+							<a href="#"><img src="img/img4.png" alt="5 slide" /></a>
+							<a href="#"><img src="img/img5.png" alt="6 slide" /></a>
+							<a href="#"><img src="img/img6.png" alt="7 slide" /></a>
+							<a href="#"><img src="img/img7.png" alt="8 slide" /></a>
+							<a href="#"><img src="img/img8.png" alt="9 slide" /></a>
+							<a href="#"><img src="img/img9.png" alt="10 slide" /></a>
+							<a href="#"><img src="img/img10.png" alt="11 slide" /></a>
+							<a href="#"><img src="img/img11.png" alt="12 slide" /></a>
+							<a href="#"><img src="img/img12.png" alt="13 slide" /></a>
+							<a href="#"><img src="img/img13.png" alt="14 slide" /></a>
+							<a href="#"><img src="img/img14.png" alt="15 slide" /></a>
+							<a href="#"><img src="img/img15.png" alt="16 slide" /></a>
+							<a href="#"><img src="img/img16.png" alt="17 slide" /></a>
+							<a href="#"><img src="img/img17.png" alt="18 slide" /></a>
+							<a href="#"><img src="img/img18.png" alt="19 slide" /></a>
+							<a href="#"><img src="img/img19.png" alt="20 slide" /></a>
+							<a href="#"><img src="img/img20.png" alt="21 slide" /></a>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="img/img.png" alt="1 slide" /></a>
+							<a href="#"><img src="img/img1.png" alt="2 slide" /></a>
+							<a href="#"><img src="img/img2.png" alt="3 slide" /></a>
+							<a href="#"><img src="img/img3.png" alt="4 slide" /></a>
+							<a href="#"><img src="img/img4.png" alt="5 slide" /></a>
+							<a href="#"><img src="img/img5.png" alt="6 slide" /></a>
+							<a href="#"><img src="img/img6.png" alt="7 slide" /></a>
+							<a href="#"><img src="img/img7.png" alt="8 slide" /></a>
+							<a href="#"><img src="img/img8.png" alt="9 slide" /></a>
+							<a href="#"><img src="img/img9.png" alt="10 slide" /></a>
+							<a href="#"><img src="img/img10.png" alt="11 slide" /></a>
+							<a href="#"><img src="img/img11.png" alt="12 slide" /></a>
+							<a href="#"><img src="img/img12.png" alt="13 slide" /></a>
+							<a href="#"><img src="img/img13.png" alt="14 slide" /></a>
+							<a href="#"><img src="img/img14.png" alt="15 slide" /></a>
+							<a href="#"><img src="img/img15.png" alt="16 slide" /></a>
+							<a href="#"><img src="img/img16.png" alt="17 slide" /></a>
+							<a href="#"><img src="img/img17.png" alt="18 slide" /></a>
+							<a href="#"><img src="img/img18.png" alt="19 slide" /></a>
+							<a href="#"><img src="img/img19.png" alt="20 slide" /></a>
+							<a href="#"><img src="img/img20.png" alt="21 slide" /></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="row quatrieme bg-white">
+				<div class="offset-md-4 col-md-4 text-center mt-2">
+					<h2>Dites bonjour et prenez contact</h2>
+					<p class="text-muted">Rejoignez aussi notre communauté sur les réseaux sociaux</p>
+				</div>
+				<div class="offset-md-4 col-md-4 offset-md-4">
+					<ul class="list-inline list-unstyled text-center reseaux_sociaux">
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/twit.png" alt="twitter" /></a></li>
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/face.png" alt="facebook" /></a></li>
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/pint.png" alt="pinterest" /></a></li>
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/goog.png" alt="google-plus" /></a></li>
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/link.png" alt="linkedin" /></a></li>
+						<li class="list-inline-item"><a class="rounded-circle p-2" href="#"><img src="img/you.png" alt="you-tube" /></a></li>
+					</ul>
+				</div>
+			</section>
+			<footer class="row">
+				<nav class="mx-auto">
+					<ul class="nav"> <!--bootstrap4 aligned nav-->
+						<li class="nav-item"><a class="nav-link text-muted" href="#">Contact</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#">Téléchargement</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#">Presse</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#">Email</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#">Aide</a></li>
+						<li class="nav-item"><a class="nav-link text-muted" href="#">politique de confidentialité</a></li>
+					</ul>
+				</nav>
+			</footer>
+	</div>
+</body>
+</html>
