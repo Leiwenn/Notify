@@ -1,0 +1,170 @@
+/* FONTs */
+@font-face{
+    font-family: 'pacificoregular';
+    src: url('../font/polices/pacifico-webfont.woff2') format('woff2'),
+         url('../font/polices/pacifico-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'vollkornsemibold';
+    src: url('../font/vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('../font/vollkorn-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, .premiere h2, .troisieme h3{
+  font-family: 'pacificoregular';
+}
+.premiere h2, .troisieme h3, .deuxieme h2, .btn, .quatrieme h2{
+  font-weight: bold;
+}
+.premiere p, .deuxieme p, .troisieme p, .quatrieme p{
+  font: 'Helvetica Neue';
+}
+.deuxieme h2, .btn, .quatrieme h2{
+  font-family: 'vollkornsemibold';
+}
+
+
+/* COLORS */
+.liseret, .rond, .list-group li:hover, .reseaux_sociaux a:hover{
+  background-color: #28a745;
+}
+.liseret{
+  height: 10px;
+}
+.rond{
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+}
+.list-group li{
+  background-color: black;
+  opacity: 0.5;
+}
+.list-group li:hover{
+  opacity: 1;
+}
+.deuxieme, footer{
+  background-color: #e3e3e3;
+}
+.embed-responsive{
+  box-shadow: 8px 8px #28a745;
+}
+.reseaux_sociaux a{
+  background-color: #d4d4d4;
+}
+
+
+/* IMG */
+header{
+  background: url(../img/header.jpg) no-repeat;
+  background-size: cover;
+  height: auto;
+}
+.reseaux_sociaux img{
+  vertical-align: middle;
+}
+
+/* LAYOUT */
+body, .container-fluid{
+  padding: 0;
+  margin: 0;
+}
+.container-fluid{
+  max-width: 1440px;
+  margin: auto;
+}
+.container-img{
+  margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .1s ease;
+  background: rgba(40, 167, 69, 0.6);
+}
+.container-img:hover .overlay{
+  opacity: 1;
+}
+
+
+
+/* MEDIA-QUERIES -*/
+@media (max-width: 767.99px){
+  .the-slider{
+    display: none;
+  }
+}
+@media (min-width: 992px){
+  header{
+    height: 500px;
+  }
+  .logo{
+    margin-top: 120px;
+  }
+  h1{
+    font-size: 60px;
+    line-height: 0.333;
+  }
+  header p{
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .premiere{
+    height: 336px;
+  }
+  .premiere h2{
+    font: 22px;
+    line-height: 0.818;
+  }
+  .premiere p, .deuxieme p, .troisieme p, .quatrieme p{
+    line-height: 1.625;
+  }
+  .deuxieme{
+    height: 426px;
+  }
+  .deuxieme h2{
+    font: 22px;
+  }
+  .btn{
+    font: 22px;
+    line-height: 0.818;
+  }
+  .embed-responsive{
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+  }
+  .troisieme{
+    height: 232px;
+  }
+  .troisieme h3{
+    font: 18px;
+    line-height: 0.818;
+  }
+  .quatrieme{
+    height: 232px;
+  }
+  .quatrieme h2{
+    font: 24px;
+    line-height: 1;
+  }
+  footer{
+    height: 130px;
+    border-top: 2px solid #28a745;
+  }
+  footer nav{
+    margin-top: 50px;
+  }
+}
